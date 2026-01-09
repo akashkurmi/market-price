@@ -1,4 +1,4 @@
-"use client";
+// "use clisent";
 import Link from "next/link"; // Simplified import
 import { LocationOn } from "@mui/icons-material";
 import {

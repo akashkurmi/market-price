@@ -23,6 +23,20 @@ const PropertyDetails = ({ id }: PropertyProps) => {
     <section className="bg-slate-50 min-h-screen pb-12">
       <div className="container mx-auto p-4 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="relative h-[400px] w-full">
+            <img
+              src={property.image_url}
+              alt={property.name}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20"></div>{" "}
+            {/* Subtle overlay */}
+            <div className="absolute bottom-6 left-6 md:left-20 bg-white/90 backdrop-blur px-4 py-2 rounded-lg shadow-lg">
+              <p className="text-blue-600 font-bold uppercase text-xs tracking-widest">
+                {property.type}
+              </p>
+            </div>
+          </div>
           {/* Main Content (Left Side) */}
           <main className="md:col-span-2 space-y-6">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
