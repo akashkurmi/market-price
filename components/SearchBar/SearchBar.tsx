@@ -1,12 +1,9 @@
 // @flow
-import { THEME_COLOR } from "@/app/Config/Tailwind/Tailwind.config";
 import { Menu, Search } from "@mui/icons-material";
-import { IconButton, InputAdornment, TextField } from "@mui/material";
+import { IconButton, TextField } from "@mui/material";
 import * as React from "react";
 
-type Props = {};
-const SearchBar = (props: Props) => {
-  THEME_COLOR;
+const SearchBar = () => {
   return (
     <div
       className={"w-30% h-20 bg-[#dbe3eb] rounded-[20vw] mt-2 text-center pt-4"}

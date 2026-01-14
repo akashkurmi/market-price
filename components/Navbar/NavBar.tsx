@@ -1,5 +1,4 @@
 "use client";
-import Link from "@/node_modules/next/link";
 import {
   AppBar,
   Avatar,
@@ -14,21 +13,12 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import { makeStyles } from "@mui/material";
 import { useRouter } from "next/navigation";
 import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import { MenuOutlined } from "@mui/icons-material";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
-interface IMenuData {
-  item: string;
-  ling: string;
-}
-interface Props {
-  items: IMenuData[];
-}
 
 const NavBar = ({ MenuData }: any) => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
