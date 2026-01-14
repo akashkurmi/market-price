@@ -1,5 +1,5 @@
 import { ThemeContext } from "@/app/Context/Context";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import BedIcon from "@mui/icons-material/Bed";
 import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
@@ -14,9 +14,11 @@ interface PropertyProps {
 
 const PropertyDetails = ({ id }: PropertyProps) => {
   const properties = useContext(ThemeContext);
-  const [property, setData]: any = useState(
-    properties.find((e: any) => e.id === id)
-  );
+  const [property, setData]: any = useState(null);
+
+  useEffect(() => {
+    if (properties) setData(properties.find((e: any) => e.id === id));
+  }, []);
 
   console.log(properties, "id page");
   return (
