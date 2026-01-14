@@ -94,7 +94,7 @@ const NavBar = ({ MenuData }: any) => {
                   key={page?.item}
                   onClick={() => {
                     router.push(page?.link);
-                    handleCloseNavMenu;
+                    handleCloseNavMenu();
                   }}
                 >
                   <Typography sx={{ textAlign: "center" }}>
@@ -129,7 +129,7 @@ const NavBar = ({ MenuData }: any) => {
                 key={page.item}
                 onClick={() => {
                   router.push(page?.link);
-                  handleCloseNavMenu;
+                  handleCloseNavMenu();
                 }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
