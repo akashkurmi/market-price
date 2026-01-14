@@ -1,3 +1,4 @@
+"use client";
 import { ThemeContext } from "@/app/Context/Context";
 import React, { useContext, useEffect, useState } from "react";
 import BedIcon from "@mui/icons-material/Bed";
