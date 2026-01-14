@@ -1,6 +1,5 @@
 "use client";
 import Context from "@/app/Context/Context";
-import Link from "@/node_modules/next/link";
 import * as React from "react";
 import HomeCards from "./HomeCards";
 
