@@ -1,4 +1,4 @@
-// "use clisent";
+// "use client";
 import { LocationOn } from "@mui/icons-material";
 import {
   Card,
